@@ -1,0 +1,23 @@
+{
+  "name": "spartan-race-training-app",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "26-week Spartan Race training plan with daily coaching, obstacle drills, and recovery tracking.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vercel"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^4.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
