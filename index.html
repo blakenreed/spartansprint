@@ -1,86 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
-  <meta name="description" content="26-week Spartan Race training plan with daily coaching, obstacle drills, and recovery tracking.">
-  <meta name="theme-color" content="#ff6b35">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Spartan Training">
-  <meta name="manifest" href="/manifest.json">
-
-  <!-- Preload critical assets -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preload" href="/manifest.json" as="fetch">
-
-  <!-- PWA support -->
-  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect fill='%23ff6b35' width='192' height='192'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='100' fill='white' font-weight='bold' font-family='sans-serif'%3ES%3C/text%3E%3C/svg%3E">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect fill='%23ff6b35' width='192' height='192'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='100' fill='white' font-weight='bold' font-family='sans-serif'%3ES%3C/text%3E%3C/svg%3E">
-
-  <!-- Styling -->
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      background-color: #0f0f0f;
-      color: #fff;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
-      background-color: #0f0f0f;
-      color: #fff;
-      overflow-x: hidden;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-    }
-
-    #root {
-      width: 100%;
-      height: 100%;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    /* Prevent zoom on input focus (iOS) */
-    input,
-    select,
-    textarea {
-      font-size: 16px;
-    }
-
-    /* Safe area support */
-    @supports (padding: max(0px)) {
-      body {
-        padding-left: max(12px, env(safe-area-inset-left));
-        padding-right: max(12px, env(safe-area-inset-right));
-      }
-    }
-  </style>
-
-  <title>Spartan Race Training App</title>
-  <script type="module" crossorigin src="/assets/index-8f2036a9.js"></script>
-</head>
-<body>
-  <div id="root"></div>
-  
-  <script>
-    // Register service worker
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => {
-        navigator.serviceWorker.register("/sw.js").then(reg => {
-          console.log("Service Worker registered");
-        }).catch(err => {
-          console.log("Service Worker registration failed:", err);
-        });
-      });
-    }
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spartan Sprint</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
